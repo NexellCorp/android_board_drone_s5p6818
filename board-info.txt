@@ -1,0 +1,1 @@
+require board=drone_s5p6818
