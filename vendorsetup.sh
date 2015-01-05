@@ -1,0 +1,2 @@
+add_lunch_combo aosp_drone_s5p6818-userdebug
+#add_lunch_combo full_drone_s5p6818-userdebug

@@ -1,0 +1,2 @@
+allow system_server vr_device:chr_file rw_file_perms;
+allow system_server sysfs_devices_system_cpu:file w_file_perms;
