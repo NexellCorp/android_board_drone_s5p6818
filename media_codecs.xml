@@ -76,8 +76,10 @@ Only the three quirks included above are recognized at this point:
 -->
 
 <MediaCodecs>
+    <Include href="media_codecs_google_audio.xml" />
+    <!-- <Include href="media_codecs_google_telephony.xml" /> -->
     <Decoders>
-        <!-- Nexell Audio Decoder -->
+        <!-- Nexell Audio Decoder for FFMPEG -->
         <!--<MediaCodec name="OMX.NX.AUDIO_DECODER.FFMPEG" type="audio/ac3" />-->
         <!--<MediaCodec name="OMX.NX.AUDIO_DECODER.FFMPEG" type="audio/ra" />-->
         <!--<MediaCodec name="OMX.NX.AUDIO_DECODER.FFMPEG" type="audio/x-ms-wma" />-->
@@ -86,15 +88,6 @@ Only the three quirks included above are recognized at this point:
         <!--<MediaCodec name="OMX.NX.AUDIO_DECODER.FFMPEG" type="audio/mpeg" />-->
         <!--<MediaCodec name="OMX.NX.AUDIO_DECODER.FFMPEG" type="audio/mpeg-L1" />-->
         <!--<MediaCodec name="OMX.NX.AUDIO_DECODER.FFMPEG" type="audio/mpeg-L2" />-->
-
-        <MediaCodec name="OMX.google.mp3.decoder" type="audio/mpeg" />
-        <MediaCodec name="OMX.google.amrnb.decoder" type="audio/3gpp" />
-        <MediaCodec name="OMX.google.amrwb.decoder" type="audio/amr-wb" />
-        <MediaCodec name="OMX.google.aac.decoder" type="audio/mp4a-latm" />
-        <MediaCodec name="OMX.google.g711.alaw.decoder" type="audio/g711-alaw" />
-        <MediaCodec name="OMX.google.g711.mlaw.decoder" type="audio/g711-mlaw" />
-        <MediaCodec name="OMX.google.vorbis.decoder" type="audio/vorbis" />
-        <MediaCodec name="OMX.google.gsm.decoder" type="audio/gsm" />
 
         <!-- Nexell Video Decoder -->
         <MediaCodec name="OMX.NX.VIDEO_DECODER" type="video/3gpp" />
@@ -108,27 +101,13 @@ Only the three quirks included above are recognized at this point:
         <MediaCodec name="OMX.NX.VIDEO_DECODER" type="video/vc1" />
         <MediaCodec name="OMX.NX.VIDEO_DECODER" type="video/x-flv" />
         <MediaCodec name="OMX.NX.VIDEO_DECODER" type="video/x-vnd.on2.vp8" />
-
-        <MediaCodec name="OMX.google.mpeg4.decoder" type="video/mp4v-es" />
-        <MediaCodec name="OMX.google.h263.decoder" type="video/3gpp" />
-        <MediaCodec name="OMX.google.h264.decoder" type="video/avc" />
-        <MediaCodec name="OMX.google.vp8.decoder" type="video/x-vnd.on2.vp8" />
-        <MediaCodec name="OMX.google.vp9.decoder" type="video/x-vnd.on2.vp9" />
     </Decoders>
 
     <Encoders>
-        <MediaCodec name="OMX.google.amrnb.encoder" type="audio/3gpp" />
-        <MediaCodec name="OMX.google.amrwb.encoder" type="audio/amr-wb" />
-        <MediaCodec name="OMX.google.aac.encoder" type="audio/mp4a-latm" />
-        <MediaCodec name="OMX.google.flac.encoder" type="audio/flac" />
-
         <!-- Nexell Video Encoder -->
         <MediaCodec name="OMX.NX.VIDEO_ENCODER" type="video/avc" />
         <MediaCodec name="OMX.NX.VIDEO_ENCODER" type="video/3gpp" />
         <MediaCodec name="OMX.NX.VIDEO_ENCODER" type="video/mp4v-es" />
-
-        <MediaCodec name="OMX.google.h263.encoder" type="video/3gpp" />
-        <MediaCodec name="OMX.google.vp8.encoder" type="video/x-vnd.on2.vp8" />
-        <MediaCodec name="OMX.google.vp9.encoder" type="video/x-vnd.on2.vp9" />
     </Encoders>
+    <Include href="media_codecs_google_video.xml" />
 </MediaCodecs>
