@@ -31,6 +31,7 @@ PRODUCT_COPY_FILES += \
 	device/nexell/drone_s5p6818/init.recovery.drone_s5p6818.rc:root/init.recovery.drone_s5p6818.rc \
 	device/nexell/drone_s5p6818/fstab.drone_s5p6818:root/fstab.drone_s5p6818 \
 	device/nexell/drone_s5p6818/ueventd.drone_s5p6818.rc:root/ueventd.drone_s5p6818.rc \
+	device/nexell/drone_s5p6818/adj_lowmem.sh:root/adj_lowmem.sh \
 	device/nexell/drone_s5p6818/bootanimation.zip:system/media/bootanimation.zip
 ################################################################################
 # key

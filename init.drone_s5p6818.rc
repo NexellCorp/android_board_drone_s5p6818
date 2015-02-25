@@ -228,6 +228,10 @@ service reporthwc /system/bin/report_hwc_scenario
     disabled
     oneshot
 
+service adjlowmem /adj_lowmem.sh
+    disabled
+    oneshot
+
 on property:hwc.scenario=*
     start reporthwc
 
